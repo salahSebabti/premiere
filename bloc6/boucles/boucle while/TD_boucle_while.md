@@ -136,32 +136,46 @@ start = time.time()
 print(f'Time: {time.time() - start}')
 ```
 ### exercice 13
-ecrire une fonction "devine" qui vous fait deviner un chiffre tiré aléatoirement par la machine:
 
-- la machine tire un chiffre au hasard entre 0 et 99 (randint du module random)
-- l'utilisateur rentre un chiffre (input)
-- tant que le chiffre de la machine est different de celui de l'utilisateur
-- - si le chiffre de la machine est plus grand que celui de l'utilisateur
-- - afficher "plus grand"
-- - si le chiffre de la machine est plus petit que celui de l'utilisateur
-- - afficher "plus petit"
-- - l'utilisateur redevine un chiffre
+Q1. Observer et tester à l'aide de Thonny les instructions suivantes. Ecrire une phrase qui explique le rôle de la fonction `input`
 
-**input** est une fonction python qui **arrete** le l'execution du code tant que l'utilisateur ne rentre pas une valeur en console, il prend en parametre une chaine de caractere à afficher avant d'entrer une valeur, la valeur entrée est la valeur de sortie de la fonction et est de type string
 ```
 x = input("entrez une valeur:")
->> entrez une valeur:
 ```
-l'execution s'arree tant que je n'aurais pas entrer une valeur, si je rentre **en console** "34"
+
+Si l'utilisateur rentre **en mode console** "34"
+
 ```
 print(x)
->> 34
 ```
-34 est une chaine de caractere
+
+x contient la **chaîne de caractères** `"34"` :
+
 ```
 print(x == 34)
->> False
 ```
+
+Dans le jeu du nombre mystere, un individu **A** choisit un nombre secret compris entre 0 et 99 et un joueur **BB** doit deviner ce nombre. Pour cela **B** doit proposer un nombre et **A** doit juste lui indiquer si le nombre secret est plus grand ou plus petit que le nombre proposé par **B**.
+
+On propose l'algorithme suivant dans lequel la machine prend le rôle de **A** et l'utilisateur prend le rôle du joueur **B**.
+
+- la machine tire un chiffre au hasard entre 0 et 99 (fonction `randint` du module `random`)
+- l'utilisateur propose un chiffre (utiliser la fontion `input`)
+- tant que le chiffre de la machine est différent de celui de l'utilisateur
+- - si le chiffre de la machine est plus grand que celui de l'utilisateur
+- - - afficher "le nombre secret est plus grand"
+- - si le chiffre de la machine est plus petit que celui de l'utilisateur
+- - - afficher "le nombre secret est plus petit"
+- - l'utilisateur propose un chiffre
+- Lorsque l'utilisateur a trouvé le nombre secret, afficher "Bravo, vous avez trouvé le nombre secret !!"
+
+Q2. Ecrire une fonction `devine` qui permet à un humain de jouer au jeu du nombre mystere. On rappelle que la fonction `int` permet de convertir une **chaîne de caractères** en **entier**
+
+Q3. Il est impossible d'écrire la fonction `devine` en utilisant une boucle `for` à la place d'une boucle `while`. Justifier pourquoi.
+
+Q4. Modifier la fonction `devine` afin d'afficher le nombre d'essais qu'a utilisé le joueur pour trouver le nombre secret (une fois que celui-ci a trouvé le nombre secret).
+
+
 
 ### exercice 14
 ecrire une fonction "pascal" qui rend en parametre un entier k et qui affiche un [triangle de pascal](https://fr.wikipedia.org/wiki/Triangle_de_Pascal) à k (valable jusqu'a 4, dans un premier temps, car on est limité par la structure de donnée qu'est la chaine de charactere)
