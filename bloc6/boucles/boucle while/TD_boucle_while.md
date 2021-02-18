@@ -155,7 +155,7 @@ x contient la **chaîne de caractères** `"34"` :
 print(x == 34)
 ```
 
-Dans le jeu du nombre mystere, un individu **A** choisit un nombre secret compris entre 0 et 99 et un joueur **BB** doit deviner ce nombre. Pour cela **B** doit proposer un nombre et **A** doit juste lui indiquer si le nombre secret est plus grand ou plus petit que le nombre proposé par **B**.
+Dans le jeu du nombre mystere, un individu **A** choisit un nombre secret compris entre 0 et 99 et un joueur **B** doit deviner ce nombre. Pour cela **B** doit proposer un nombre et **A** doit juste lui indiquer si le nombre secret est plus grand ou plus petit que le nombre proposé par **B**.
 
 On propose l'algorithme suivant dans lequel la machine prend le rôle de **A** et l'utilisateur prend le rôle du joueur **B**.
 
