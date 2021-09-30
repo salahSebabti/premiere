@@ -1,0 +1,18 @@
+#ex9
+def compare_tableau(tab1,tab2):
+    """
+    description de la fonction : cette fonction permet de comparer deux listes
+    tab1 (list) : liste qui comporte des nombres pair
+    tab2 (list) : liste qui comporte des nombres pair également 
+    return (bool) : renvoie True si les listes sont identiques et si elles sont différentes renvoie False
+    """
+    if len(tab1) != len(tab2):
+        import doctest
+        doctest.testmod(optionflags=doctest.NORMALIZE_WHITESPACE | doctest.ELLIPSIS, verbose = False)
+        
+    i=0
+    while i != len(tab1):
+        if tab1[i] != tab2[i]:
+            return False
+        i += 1
+    return True 
