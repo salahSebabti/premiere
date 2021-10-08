@@ -14,3 +14,7 @@
 #select nom from auteur order by nom asc
 #q8)
 #select nom from usager where cp = "75012" or cp = "75013"
+#q9)
+Select nom, adresse from usager where adresse Not "rue"
+#q10)
+Select titre from livre where annee / 4 or annee / 400
