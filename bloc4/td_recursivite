@@ -1,0 +1,43 @@
+#ex4)
+#1)
+#maximum recursion depth exceeded in comparison
+# on a atteint le maximum de recursion
+#2)
+# on a (n+1) donc arrive pas a 1 et ca continue a l'infini
+#3)
+# def fonctionDeux(n):
+#     if n == 0:
+#         return 1
+#     elif n > 0:
+#         return n+fonctionDeux(n-2)
+#4)
+# fonctionDeux(10) = 31
+#5)
+#unsupported operand type(s) for +: 'int' and 'NoneType'
+#6)
+#
+#7)
+#unsupported operand type(s) for +: 'int' and 'NoneType' à la ligne 8
+#8)
+#def mystere(n,p):
+#     """
+#     n et p sont deux entiers naturels
+#     """
+#     if p == 0 :
+#         return 0
+#     else :
+#         return n + mystere(n, p-1)
+#9)
+#
+
+#EX5)
+#1)
+#def puissance(a,n):
+#     if n%2 == 0:
+#         return a**n == (a*a)**n/2
+#     else:
+#         return a**n == a * (a*a)**(n-1)/2
+#2)
+#def puissanceV2(a,n):
+
+          
