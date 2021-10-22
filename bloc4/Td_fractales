@@ -1,0 +1,12 @@
+Ex 2) 
+def vonkoch(n,1) :
+    if n > 0:
+       vonkoch(n-1,l)
+       turtle.left(60)
+       vonkoch(n-1,l)
+       turtle.right(120)
+       vonkoch(n-1,l)
+       turtle.left(60)
+       vonkoch(n-1,l)
+    else:
+        turtle.forward(l)
